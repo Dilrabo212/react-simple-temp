@@ -1,3 +1,7 @@
+import cls from './style.module.scss'
+
 export const Home = () => {
-  return <h1>Home</h1>
+  return (
+    <div className={cls.home}>Home</div>
+  )
 }

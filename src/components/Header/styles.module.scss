@@ -1,0 +1,29 @@
+.header {
+    width: 100%px;
+    height: 88px;
+    flex-shrink: 0;
+    background: #FAFAFC;
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 236px;
+    padding-left: 204px;
+
+    .navStyle {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+
+        ul {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            list-style: none;
+            cursor: pointer;
+        }
+
+    }
+}
