@@ -1,30 +1,35 @@
 // import { Link } from 'react-router-dom'
-import { Logo } from '../../svg'
+import { Kalakolchik, Logo } from '../../svg'
 import SmButton from '../Buttons/SmButton'
 import cls from './styles.module.scss'
 
 export const Header = () => {
-  return <header className={cls.header}>
-    <Logo />
-    <nav className={cls.navStyle}>
+  return <div className={cls.wraphead}>
+    <div className='container' >
+      <header className={cls.header}>
+        <Logo />
+        <nav className={cls.navStyle}>
 
-      <ul>
-        <li>Все потоки</li>
-        <li>Разработка</li>
-        <li>Администрирование</li>
-        <li>Дизайн</li>
-        <li>Менеджмент</li>
-        <li>Маркетинг</li>
-        <li>Научпоп</li>
-      </ul>
+          <ul>
+            <li className={cls.chekedAktive}>Все потоки</li>
+            <li className={cls.cheked}>Разработка</li>
+            <li className={cls.cheked}>Администрирование</li>
+            <li className={cls.cheked}>Дизайн</li>
+            <li className={cls.cheked}>Менеджмент</li>
+            <li className={cls.cheked}>Маркетинг</li>
+            <li className={cls.cheked}>Научпоп</li>
+          </ul>
+        </nav><div className={cls.kalakolchik}>
+          <Kalakolchik /><div className={cls.kalakolchikShotchik}>1</div>
+        </div>
+        <SmButton />
 
-    </nav>
-    <SmButton />
-
-    {/* <ul>
+        {/* <ul>
         <li>
           <Link to="/todos">Todos</Link>
         </li>
       </ul> */}
-  </header>
+      </header>
+    </div>
+  </div>
 }

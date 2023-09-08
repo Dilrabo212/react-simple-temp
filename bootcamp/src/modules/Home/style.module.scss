@@ -1,4 +1,93 @@
 .home {
     width: 100%;
-    height: calc(100vh - 402px);
+    // height: calc(100vh - 402px);
+}
+
+.historyBoxs {
+    width: 100%;
+    // height: 249px;
+
+    .title {
+        padding-bottom: 32px;
+        padding-top: 40px;
+        color: #222;
+        font-family: Roboto;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: 0.25px;
+    }
+
+    .historyWrp {
+        display: flex;
+        width: 1251px;
+        align-items: flex-start;
+        // gap: 24px;
+        margin-left: 0;
+
+        .gredientLine {
+            position: relative;
+            width: 150px;
+            height: 150px;
+            fill: rgba(255, 255, 255, 0.01);
+            stroke-width: 6px;
+            stroke: #FFD06B;
+
+            .historyUsers {
+                position: absolute;
+                top: 12.5px;
+                left: 12.5px;
+
+            }
+        }
+
+    }
+
+    .userPostBlok {
+        display: flex;
+        width: 1512px;
+        border-radius: 8px;
+        margin-top: 52px;
+        margin-bottom: 52px;
+
+        img {
+            width: 360px;
+            height: 300px;
+            flex-shrink: 0;
+        }
+
+        .date {
+            padding-top: 31.33px;
+            opacity: 0.5;
+            padding-bottom: 8px;
+        }
+
+        h3 {
+            width: 346px;
+            color: #000;
+            font-variant-numeric: lining-nums proportional-nums;
+            font-family: Nunito;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 24px;
+            /* 133.333% */
+        }
+    }
+
+    .wrp {
+        // width: 100%;
+        padding-bottom: 346.6px;
+        padding-top: 42px;
+
+    }
+
+    .pageList {
+        width: 444px;
+        height: 50px;
+        display: flex;
+        justify-content: flex-end;
+        cursor: pointer;
+        border: 1px solid #1B5BF7;
+    }
 }
