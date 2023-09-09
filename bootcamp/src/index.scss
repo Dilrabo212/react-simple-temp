@@ -13,6 +13,11 @@
   color: $main-color;
 }
 
+a {
+  text-decoration: none;
+  color: $main-color;
+}
+
 .container {
   max-width: 1440px;
   margin: 0 auto;

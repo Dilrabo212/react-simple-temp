@@ -2,12 +2,6 @@ import cls from './style.module.scss'
 import user1 from '../../image/Ellipse 158.png'
 import user2 from '../../image/user2.png'
 import user3 from '../../image/user3.png'
-
-
-
-
-import React from 'react'
-
 export default function History() {
     return (
         <div className={cls.historyBoxs}>

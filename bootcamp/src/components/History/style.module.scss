@@ -16,11 +16,16 @@
 }
 
 .gredientLine {
+
     position: absolute;
-    top: 6px;
-    left: 9px;
+    top: 8px;
+    left: 8px;
     border-radius: 50%;
     border: 5px solid white;
+
+    & img {
+        display: block;
+    }
 
 }
 

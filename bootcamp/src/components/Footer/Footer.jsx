@@ -1,5 +1,6 @@
 import cls from './styles.module.scss'
 import { LogoFooter } from '../../svg'
+import { Link } from 'react-router-dom'
 
 export const Footer = () => {
   return <footer className={cls.footer}>
@@ -15,25 +16,25 @@ export const Footer = () => {
           <div className={cls.card}>
             <b>Ресурсы</b>
             <ul>
-              <li>Статьи</li>
-              <li>Журналы</li>
-              <li>Газеты</li>
-              <li>Диплом</li>
+              <Link to={"/"}><li>Статьи</li></Link>
+              <Link to={"/"}><li>Журналы</li></Link>
+              <Link to={"/"}> <li>Газеты</li></Link>
+              <Link to={"/"}><li>Диплом</li></Link>
             </ul>
           </div>
           <div className={cls.card}>
             <b>О нас</b>
             <ul>
-              <li>Контакты</li>
-              <li>Помощь</li>
-              <li>Заявки</li>
-              <li>Политика</li>
+              <Link to={"/"}><li>Контакты</li></Link>
+              <Link to={"/"}><li>Помощь</li></Link>
+              <Link to={"/"}> <li>Заявки</li></Link>
+              <Link to={"/"}><li>Политика</li></Link>
             </ul>
           </div>
           <div className={cls.card}>
             <b>Помощь</b>
             <ul>
-              <li>Часто задаваемые вопросы</li>
+              <Link to={"/"}><li>Часто задаваемые вопросы</li></Link>
             </ul>
           </div>
         </div>
