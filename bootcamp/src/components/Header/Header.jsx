@@ -7,9 +7,8 @@ export const Header = () => {
   return <div className={cls.wraphead}>
     <div className='container' >
       <header className={cls.header}>
-        <Logo />
+        <Logo link="/" />
         <nav className={cls.navStyle}>
-
           <ul>
             <li className={cls.chekedAktive}>Все потоки</li>
             <li className={cls.cheked}>Разработка</li>
@@ -19,9 +18,10 @@ export const Header = () => {
             <li className={cls.cheked}>Маркетинг</li>
             <li className={cls.cheked}>Научпоп</li>
           </ul>
-        </nav><div className={cls.kalakolchik}>
+        </nav>
+        <button className={cls.kalakolchik}>
           <Kalakolchik /><div className={cls.kalakolchikShotchik}>1</div>
-        </div>
+        </button>
         <SmButton />
 
         {/* <ul>
