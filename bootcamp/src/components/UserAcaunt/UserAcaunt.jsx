@@ -4,6 +4,7 @@ import user1 from '../../image/acauntPosted.png'
 import profile from '../../image/profile.png'
 import FollowBtn from '../Buttons/Follow/FollowBtn'
 import SaveBTN from '../Buttons/SaveBTN/SaveBTN'
+import { Link } from 'react-router-dom'
 
 export default function UserAcaunt() {
 
@@ -11,7 +12,7 @@ export default function UserAcaunt() {
         <div className="container">
             <div className={cls.wrapper}>
                 <div className={cls.userInfo}>
-                    <img src={profile} alt="acauntPhoto" />
+                    <Link to={'/infouser'}> <img src={profile} alt="acauntPhoto" /></Link>
                     <span className={cls.userName}>Dilorom Alieva</span>
                     <div className={cls.buttonsWrap}>
                         <FollowBtn />

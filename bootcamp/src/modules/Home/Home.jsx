@@ -9,6 +9,7 @@ import MUICard from '../../components/MUI/MUICard'
 import MuiCard from '../../components/MUI/MUICard/MUICard'
 import Pagination from '../../components/MUI/Pagination/Pagination'
 import PaginationRounded from '../../components/MUI/Pagination/Pagination'
+import { Link } from 'react-router-dom'
 
 const users = [
   {
@@ -173,7 +174,7 @@ export const Home = () => {
           >
             {users.map(user => (
               <Grid item xs={3} key={user.id}>
-                <MuiCard el={user} />
+                <Link to={'/useracaunt'}> <MuiCard el={user} /></Link>
               </Grid>
             ))}
           </Grid>
