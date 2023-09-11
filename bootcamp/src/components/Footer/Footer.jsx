@@ -9,7 +9,7 @@ export const Footer = () => {
         <div className={cls.aboutConeiner}>
           <div className={cls.logoAndText}>
             <div className={cls.logo}> <LogoFooter link={"/"} /></div>
-            <p>Помощник в публикации статей, журналов.
+            <p className={cls.footertext}>Помощник в публикации статей, журналов.
               Список популярных международных конференций.
               Всё для студентов и преподавателей.</p>
           </div >
@@ -34,7 +34,7 @@ export const Footer = () => {
           <div className={cls.card}>
             <b>Помощь</b>
             <ul>
-              <Link to={"/"}><li>Часто задаваемые вопросы</li></Link>
+              <Link to={"/home"}><li>Часто задаваемые вопросы</li></Link>
             </ul>
           </div>
         </div>

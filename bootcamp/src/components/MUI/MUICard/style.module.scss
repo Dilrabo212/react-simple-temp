@@ -2,6 +2,8 @@
     max-width: 360px;
     width: 100%;
     box-shadow: none;
+    background: transparent;
+    margin-top: 48px;
 
     .cardBody {
         .img {
@@ -23,10 +25,21 @@
             }
 
             .title {
+                width: 346px;
                 font-size: 18px;
                 font-style: normal;
                 font-weight: 700;
                 line-height: 24px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                display: -webkit-box;
+                box-orient: vertical;
+                -webkit-box-orient: vertical;
+                -webkit-line-clamp: 2;
+                padding: 0 2rem;
+                padding-left: 1px;
+                padding-bottom: 5px;
+
             }
         }
     }
