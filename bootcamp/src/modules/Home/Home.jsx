@@ -163,7 +163,7 @@ export const Home = () => {
     <div className={cls.home}>
       <div className='container'>
         <div className={cls.historyBoxs}>
-          <History />
+          <Link to={'/useracaunt'}>  <History /></Link>
 
 
           <Grid
