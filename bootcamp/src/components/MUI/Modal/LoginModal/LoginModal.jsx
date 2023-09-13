@@ -22,18 +22,14 @@ const style = {
     borderRadius: '8px',
 };
 
-export default function LoginModal() {
-    const [open, setOpen] = React.useState(false);
-    const handleOpen = () => setOpen(true);
-    const handleClose = () => setOpen(false);
-
+export default function LoginModal({ openLogin, handleCloseLogin, }) {
     return (
         <div>
-            <Button className={styles.btn} onClick={handleOpen}>Войти</Button>
+
             <Modal
                 className={styles.modal}
-                open={open}
-                onClose={handleClose}
+                open={openLogin}
+                onClose={handleCloseLogin}
                 aria-labelledby="modal-modal-title"
                 aria-describedby="modal-modal-description"
             >
@@ -43,6 +39,7 @@ export default function LoginModal() {
                     </Typography>
                     <input className={styles.inp} type='text' placeholder='Придумайте пароль' />
                     <input className={styles.inp} type='text' placeholder='Подтвердите пароль' />
+
                     <Button className={styles.login}>Войти</Button>
                 </Box>
             </Modal>

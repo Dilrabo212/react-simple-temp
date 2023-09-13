@@ -2,12 +2,10 @@
 @import './sass/fonts.scss';
 
 * {
-  margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
-.body {
+body {
   font-family: $main-font-family;
   background-color: #fff;
   color: $main-color;
@@ -19,6 +17,6 @@ a {
 }
 
 .container {
-  max-width: 1440px;
+  max-width: 1500px;
   margin: 0 auto;
 }

@@ -7,7 +7,6 @@ export default function History() {
         <div className={cls.historyBoxs}>
             <h2 className={cls.title}>История последних новостей</h2>
             <div className={cls.historyWrp}>
-
                 <div className={cls.gredientLineWrp}>
                     <div className={cls.gredientLine}>
                         <img src={user1} />

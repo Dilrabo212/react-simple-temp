@@ -3,8 +3,13 @@
 }
 
 .userPostes {
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 45px;
+    margin-left: calc(23px - 10px);
 }
+
+
 
 .wrp {
     display: flex;

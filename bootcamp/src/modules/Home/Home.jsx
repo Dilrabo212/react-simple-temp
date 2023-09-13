@@ -1,15 +1,12 @@
 import cls from './style.module.scss'
-import { Grid } from '@mui/material'
 import user1 from '../../image/ruser1.png'
 import user2 from '../../image/ruser2.png'
 import user3 from '../../image/ruser3.png'
-
 import History from '../../components/History/History'
-import MUICard from '../../components/MUI/MUICard'
 import MuiCard from '../../components/MUI/MUICard/MUICard'
-import Pagination from '../../components/MUI/Pagination/Pagination'
 import PaginationRounded from '../../components/MUI/Pagination/Pagination'
 import { Link } from 'react-router-dom'
+import { request } from 'express'
 
 const users = [
   {
@@ -159,6 +156,13 @@ const users = [
 
 ]
 export const Home = () => {
+
+  request.get('./posts')
+    .then(data => {
+      console.log(data)
+    })
+
+
   return (
     <div className={cls.home}>
       <div className='container'>
@@ -166,18 +170,13 @@ export const Home = () => {
           <Link to={'/useracaunt'}>  <History /></Link>
 
 
-          <Grid
-            container
-            rowSpacing={1}
-            columnSpacing={{ xs: 2, sm: 3, md: 4 }}
-            className={cls.userPostes}
-          >
+          <div className={cls.userPostes}>
             {users.map(user => (
-              <Grid item xs={3} key={user.id}>
+              <div key={user.id}>
                 <Link to={'/useracaunt'}> <MuiCard el={user} /></Link>
-              </Grid>
+              </div>
             ))}
-          </Grid>
+          </div>
           <div className={cls.wrp}>
             <PaginationRounded />
           </div>
