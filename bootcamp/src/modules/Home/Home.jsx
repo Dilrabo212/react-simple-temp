@@ -167,7 +167,7 @@ export const Home = () => {
     <div className={cls.home}>
       <div className='container'>
         <div className={cls.historyBoxs}>
-          <Link to={'/useracaunt'}>  <History /></Link>
+          <History />
 
 
           <div className={cls.userPostes}>
